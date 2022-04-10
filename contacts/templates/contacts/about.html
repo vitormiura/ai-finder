@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/LOGO.png' %}"/>
+    <title>Ai-Finder</title>
+</head>
+<body style="background-image: url({% static 'img/black.jpg' %});">
+    
+    <nav class="navMenu">
+        <a href="{% url 'index' %}">Home</a>
+        <a href="{% url 'about' %}">About</a>
+        <!-- <a href="#">Work</a> -->
+        <a href="{% url 'contact' %}">Contact</a>
+        <div class="dot"></div>
+    </nav>
+    <section>
+        <div class="about">
+            <p>Somos uma empresa voltada ao uso da
+                inteligência artificial no meio comercial,
+                acreditamos que o futuro está nas mãos
+                daqueles que adaptam a tecnologia para
+                o avanço de seu negócio.</p>
+        </div>
+    </section>
+    <footer>
+        <p>Miura | 2022 all rights reserved.</p>
+    </footer>
+</body>
+</html>
